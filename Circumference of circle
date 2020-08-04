@@ -1,0 +1,22 @@
+package com.gmail.getmandmytro1;
+
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+			Scanner sc = new Scanner(System.in);
+			System.out.println(" Enter radius and press Enter ");
+			double r;
+			
+			r = sc.nextDouble();
+			double a = 2 * Math.PI * r;
+			
+			System.out.println(" Circumference of circle is " + a);
+		
+		
+	}
+
+}
