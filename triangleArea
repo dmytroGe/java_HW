@@ -11,9 +11,9 @@ public class main {
 		double d = 0.5;
 		double a = (b + c + d) / 2;
 		
-		double area = Math.sqrt(a * (a - b) * (a - c) * (a - d));
+		double s = Math.sqrt(a * (a - b) * (a - c) * (a - d));
 		
-		System.out.println(" Area of a triangle is " + area);
+		System.out.println(" Area of a triangle is " + s);
 		
 
 	}
