@@ -1,0 +1,21 @@
+package com.gmail.getmandmytro1;
+
+
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		double b = 0.4;
+		double c = 0.3;
+		double d = 0.5;
+		double a = (b + c + d) / 2;
+		
+		double area = Math.sqrt(a * (a - b) * (a - c) * (a - d));
+		
+		System.out.println(" Area of a triangle is " + area);
+		
+
+	}
+
+}
