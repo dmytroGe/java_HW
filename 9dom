@@ -1,0 +1,50 @@
+package com.gmail.getmandmytro1;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		int entrance = 0;
+		int floor = 0;
+		int apartment = 0;
+		int a;
+
+		System.out.println("Input apartment number");
+		apartment = sc.nextInt();
+		if (apartment > 145) {
+			System.out.println("There is no apartment with that number ");
+		} else {
+			a = apartment;
+
+			if (apartment <= 36) {
+				entrance = 1;
+			} else if (apartment <= 72) {
+				entrance = 2;
+				a = a - 36;
+			} else if (apartment <= 108) {
+				entrance = 3;
+				a = a - 36 * 3;
+			} else if (apartment <= 144) {
+				entrance = 4;
+				a = a - 36 * 3;
+			}
+
+			if (a == 36) {
+				floor = 9;
+			} else {
+				for (int f = 1; f <= 9; f++) {
+					if ((a / (f * 4)) <= 0) {
+						floor = f;
+					}
+				}
+				System.out
+						.println(" Apartment number " + apartment + " is in " + entrance + " entrance on " + floor + " floor ");
+			}
+		}
+	}
+
+}
